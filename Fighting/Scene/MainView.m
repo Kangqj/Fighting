@@ -70,8 +70,11 @@
             [UIView animateWithDuration:0.3 animations:^{
                 
                 CGRect rect = leftPersonView.frame;
-                rect.origin.y = rect.origin.y - 10;
-                leftPersonView.frame = rect;
+                if (rect.origin.y - move_speed >0)
+                {
+                    rect.origin.y = rect.origin.y - move_speed;
+                    leftPersonView.frame = rect;
+                }
                 
             }];
             
@@ -82,8 +85,11 @@
             [UIView animateWithDuration:0.3 animations:^{
                 
                 CGRect rect = leftPersonView.frame;
-                rect.origin.y = rect.origin.y + 10;
-                leftPersonView.frame = rect;
+                if (rect.origin.y + move_speed + leftPersonView.frame.size.height < 768)
+                {
+                    rect.origin.y = rect.origin.y + move_speed;
+                    leftPersonView.frame = rect;
+                }
                 
             }];
             
@@ -94,8 +100,11 @@
             [UIView animateWithDuration:0.3 animations:^{
                 
                 CGRect rect = rightPersonView.frame;
-                rect.origin.y = rect.origin.y - 10;
-                rightPersonView.frame = rect;
+                if (rect.origin.y - move_speed >0)
+                {
+                    rect.origin.y = rect.origin.y - move_speed;
+                    rightPersonView.frame = rect;
+                }
                 
             }];
             
@@ -106,8 +115,11 @@
             [UIView animateWithDuration:0.3 animations:^{
                 
                 CGRect rect = rightPersonView.frame;
-                rect.origin.y = rect.origin.y + 10;
-                rightPersonView.frame = rect;
+                if (rect.origin.y + move_speed + leftPersonView.frame.size.height < 768)
+                {
+                    rect.origin.y = rect.origin.y + move_speed;
+                    rightPersonView.frame = rect;
+                }
                 
             }];
             

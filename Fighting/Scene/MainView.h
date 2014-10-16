@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "PersonView.h"
 
+//控制方向
 typedef enum
 {
     Direction_LeftUp = 0,
@@ -18,7 +19,7 @@ typedef enum
     
 }Direction;
 
-
+#define move_speed   30
 
 @interface MainView : UIView
 {
