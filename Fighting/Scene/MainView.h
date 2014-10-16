@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PersonView.h"
 
 typedef enum
 {
@@ -17,6 +18,12 @@ typedef enum
     
 }Direction;
 
+
+
 @interface MainView : UIView
+{
+    PersonView *leftPersonView;
+    PersonView *rightPersonView;
+}
 
 @end
