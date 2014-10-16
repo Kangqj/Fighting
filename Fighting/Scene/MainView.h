@@ -19,6 +19,7 @@ typedef enum
     
 }Direction;
 
+//移动速度
 #define move_speed   30
 
 @interface MainView : UIView

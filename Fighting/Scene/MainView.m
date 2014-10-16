@@ -16,7 +16,11 @@
     if (self) {
         // Initialization code
         
-        self.backgroundColor = [UIColor grayColor];
+        self.backgroundColor = [UIColor whiteColor];
+        
+        UIImageView *revierImage = [[UIImageView alloc] initWithFrame:CGRectMake((1024-200)/2, 0, 200, 768)];
+        revierImage.backgroundColor = [UIColor greenColor];
+        [self addSubview:revierImage];
         
         //左上操作按钮
         UIButton *leftUpBtn = [UIButton buttonWithType:UIButtonTypeCustom];
