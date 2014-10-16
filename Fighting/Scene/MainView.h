@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum
+{
+    Direction_LeftUp = 0,
+    Direction_LeftDown ,
+    Direction_RightUp ,
+    Direction_RightDown
+    
+}Direction;
+
 @interface MainView : UIView
 
 @end

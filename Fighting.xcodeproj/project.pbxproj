@@ -504,6 +504,7 @@
 				2A4092BD19EFBA69003D96AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A4092BE19EFBA69003D96AD /* Build configuration list for PBXNativeTarget "FightingTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +513,7 @@
 				2A4092C019EFBA69003D96AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
