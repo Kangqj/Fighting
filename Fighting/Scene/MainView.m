@@ -139,16 +139,18 @@
 
 - (void)fire
 {
+    if (!weaponTimer)
+    {
+        weaponTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(weaponFly) userInfo:nil repeats:YES];
+    }
+    
+    WeaponView *weaponView = [[WeaponView alloc] initWithFrame:CGRectMake(200, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)];
     
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
+- (void)weaponFly
 {
-    // Drawing code
+    
 }
-*/
 
 @end

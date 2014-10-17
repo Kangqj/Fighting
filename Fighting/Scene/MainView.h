@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PersonView.h"
+#import "WeaponView.h"
 
 //控制方向
 typedef enum
@@ -26,6 +27,8 @@ typedef enum
 {
     PersonView *leftPersonView;
     PersonView *rightPersonView;
+    
+    NSTimer *weaponTimer;
 }
 
 @end
