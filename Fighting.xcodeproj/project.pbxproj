@@ -422,10 +422,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: yang zhenhai (XVA2D5MM2B)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: yang zhenhai (XVA2D5MM2B)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fighting/Fighting-Prefix.pch";
 				INFOPLIST_FILE = "Fighting/Fighting-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4A82A09B-F723-4980-A171-84B97C60CC2F";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -435,10 +438,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: yang zhenhai (XVA2D5MM2B)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: yang zhenhai (XVA2D5MM2B)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fighting/Fighting-Prefix.pch";
 				INFOPLIST_FILE = "Fighting/Fighting-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4A82A09B-F723-4980-A171-84B97C60CC2F";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B6B62241-D06A-4BC7-B0F5-61623E470F23</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Fighting</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F7E64D43-EB01-410E-BC4A-F040D456AE2C</key>
+		<string>https://github.com/Kangqj/Fighting.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Fighting.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C2423AAE-17F2-4B09-A457-221FF987BC19</key>
+		<string>../../Fighting</string>
+		<key>F7E64D43-EB01-410E-BC4A-F040D456AE2C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Kangqj/Fighting.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F7E64D43-EB01-410E-BC4A-F040D456AE2C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F7E64D43-EB01-410E-BC4A-F040D456AE2C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Fighting</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C2423AAE-17F2-4B09-A457-221FF987BC19</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Fighting</string>
+		</dict>
+	</array>
+</dict>
+</plist>

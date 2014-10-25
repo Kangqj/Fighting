@@ -28,7 +28,8 @@ typedef enum
     PersonView *leftPersonView;
     PersonView *rightPersonView;
     
-    NSTimer *weaponTimer;
+    NSTimer *leftWeaponTimer;
+    NSTimer *rightWeaponTimer;
 }
 
 @end
