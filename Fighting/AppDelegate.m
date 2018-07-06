@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SSZipArchive.h"
 
 @implementation AppDelegate
 
@@ -18,7 +19,60 @@
     
     return YES;
 }
-							
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    NSLog(@"application openURL,url=%@,sourceApplication=%@",url,sourceApplication);
+    
+    if ([[url absoluteString] rangeOfString:@"WhatsApp"].location != NSNotFound){
+        //sourceApplication=net.whatsapp.WhatsApp
+        
+        NSString *lockScreenPath = [NSHomeDirectory() stringByAppendingFormat:@"/Documents"];
+        [SSZipArchive unzipFileAtPath:url.path toDestination:lockScreenPath];
+        
+        NSArray *dirArray = [[NSFileManager defaultManager] directoryContentsAtPath:lockScreenPath];
+        
+        for (NSString *s in dirArray)
+        {
+            NSLog(@"%@", s);
+        }
+        
+        /*
+         2018-07-06 15:48:12.050253+0800 Test[3523:795822] application openURL,url=file:///private/var/mobile/Containers/Data/Application/2EA1EBF2-6F21-423C-B0D0-C9D7873FB097/Documents/Inbox/WhatsApp%20Chat%20-%20%E9%AB%98%E7%95%85-4.zip,sourceApplication=net.whatsapp.WhatsApp
+         2018-07-06 15:48:12.072455+0800 Test[3523:795822] Inbox
+         2018-07-06 15:48:12.072672+0800 Test[3523:795822] _chat.txt
+         2018-07-06 15:48:12.072809+0800 Test[3523:795822] export
+         2018-07-06 15:48:12.072940+0800 Test[3523:795822] export.txt
+         (lldb)
+         
+         
+         2018-07-06 15:50:28.415813+0800 Test[3523:795822] application openURL,url=file:///private/var/mobile/Containers/Data/Application/2EA1EBF2-6F21-423C-B0D0-C9D7873FB097/Documents/Inbox/WhatsApp%20Chat%20-%20%E9%AB%98%E7%95%85-5.zip,sourceApplication=net.whatsapp.WhatsApp
+         2018-07-06 15:50:28.439597+0800 Test[3523:795822] 2018-04-23-PHOTO-00000005.jpg
+         2018-07-06 15:50:28.439703+0800 Test[3523:795822] 2018-04-23-PHOTO-00000006.jpg
+         2018-07-06 15:50:28.439802+0800 Test[3523:795822] Inbox
+         2018-07-06 15:50:28.439894+0800 Test[3523:795822] _chat.txt
+         2018-07-06 15:50:28.439983+0800 Test[3523:795822] export
+         2018-07-06 15:50:28.440128+0800 Test[3523:795822] export.txt
+         
+         */
+        
+        NSString *path = [NSHomeDirectory() stringByAppendingFormat:@"/Documents/_chat.txt"];
+        
+        
+        //        NSString *content = [[NSString alloc] initWithContentsOfFile:chatPath encoding:NSUTF8StringEncoding error:&error];
+        
+        UIWebView *m_webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+        NSURLRequest *requestObj = [NSURLRequest requestWithURL:[NSURL fileURLWithPath:path]];
+        [m_webView setUserInteractionEnabled:YES];
+        [m_webView loadRequest:requestObj];
+        
+        [self.window addSubview:m_webView];
+        
+    }
+    
+    return YES;
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

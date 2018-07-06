@@ -24,6 +24,12 @@
 		2A4092C519EFBAFB003D96AD /* PersonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4092C419EFBAFB003D96AD /* PersonView.m */; };
 		2A4092C819EFBB0D003D96AD /* WeaponView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4092C719EFBB0D003D96AD /* WeaponView.m */; };
 		2A4092CC19EFBB4D003D96AD /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4092CB19EFBB4D003D96AD /* MainView.m */; };
+		C32A2FE920EF652100F69EAB /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = C32A2FDD20EF652100F69EAB /* ioapi.c */; };
+		C32A2FEA20EF652100F69EAB /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = C32A2FDF20EF652100F69EAB /* mztools.c */; };
+		C32A2FEB20EF652100F69EAB /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = C32A2FE120EF652100F69EAB /* unzip.c */; };
+		C32A2FEC20EF652100F69EAB /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = C32A2FE320EF652100F69EAB /* zip.c */; };
+		C32A2FED20EF652100F69EAB /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = C32A2FE620EF652100F69EAB /* SSZipArchive.m */; };
+		C32A2FEE20EF652100F69EAB /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = C32A2FE820EF652100F69EAB /* ZipArchive.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +68,19 @@
 		2A4092C719EFBB0D003D96AD /* WeaponView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeaponView.m; sourceTree = "<group>"; };
 		2A4092CA19EFBB4D003D96AD /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
 		2A4092CB19EFBB4D003D96AD /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		C32A2FDC20EF652100F69EAB /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		C32A2FDD20EF652100F69EAB /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		C32A2FDE20EF652100F69EAB /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		C32A2FDF20EF652100F69EAB /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		C32A2FE020EF652100F69EAB /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		C32A2FE120EF652100F69EAB /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		C32A2FE220EF652100F69EAB /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		C32A2FE320EF652100F69EAB /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		C32A2FE420EF652100F69EAB /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		C32A2FE520EF652100F69EAB /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		C32A2FE620EF652100F69EAB /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		C32A2FE720EF652100F69EAB /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		C32A2FE820EF652100F69EAB /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +145,7 @@
 				2A40929E19EFBA68003D96AD /* Main.storyboard */,
 				2A4092A119EFBA68003D96AD /* ViewController.h */,
 				2A4092A219EFBA68003D96AD /* ViewController.m */,
+				C32A2FDA20EF652100F69EAB /* ZipArchive */,
 				2A4092C919EFBB36003D96AD /* Scene */,
 				2A4092C119EFBADE003D96AD /* Person */,
 				2A4092C219EFBADE003D96AD /* Weapon */,
@@ -189,6 +209,34 @@
 				2A4092CB19EFBB4D003D96AD /* MainView.m */,
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		C32A2FDA20EF652100F69EAB /* ZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				C32A2FDB20EF652100F69EAB /* minizip */,
+				C32A2FE520EF652100F69EAB /* SSZipArchive.h */,
+				C32A2FE620EF652100F69EAB /* SSZipArchive.m */,
+				C32A2FE720EF652100F69EAB /* ZipArchive.h */,
+				C32A2FE820EF652100F69EAB /* ZipArchive.mm */,
+			);
+			path = ZipArchive;
+			sourceTree = "<group>";
+		};
+		C32A2FDB20EF652100F69EAB /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				C32A2FDC20EF652100F69EAB /* crypt.h */,
+				C32A2FDD20EF652100F69EAB /* ioapi.c */,
+				C32A2FDE20EF652100F69EAB /* ioapi.h */,
+				C32A2FDF20EF652100F69EAB /* mztools.c */,
+				C32A2FE020EF652100F69EAB /* mztools.h */,
+				C32A2FE120EF652100F69EAB /* unzip.c */,
+				C32A2FE220EF652100F69EAB /* unzip.h */,
+				C32A2FE320EF652100F69EAB /* zip.c */,
+				C32A2FE420EF652100F69EAB /* zip.h */,
+			);
+			path = minizip;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,12 +336,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C32A2FEB20EF652100F69EAB /* unzip.c in Sources */,
 				2A4092A319EFBA68003D96AD /* ViewController.m in Sources */,
 				2A4092C819EFBB0D003D96AD /* WeaponView.m in Sources */,
+				C32A2FEC20EF652100F69EAB /* zip.c in Sources */,
+				C32A2FEA20EF652100F69EAB /* mztools.c in Sources */,
 				2A4092C519EFBAFB003D96AD /* PersonView.m in Sources */,
 				2A40929D19EFBA68003D96AD /* AppDelegate.m in Sources */,
 				2A40929919EFBA68003D96AD /* main.m in Sources */,
 				2A4092CC19EFBB4D003D96AD /* MainView.m in Sources */,
+				C32A2FE920EF652100F69EAB /* ioapi.c in Sources */,
+				C32A2FEE20EF652100F69EAB /* ZipArchive.mm in Sources */,
+				C32A2FED20EF652100F69EAB /* SSZipArchive.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
